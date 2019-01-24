@@ -1,0 +1,16 @@
+{
+  "name": "AWS Logs",
+  "version": "1.0.0",
+  "description": "Adds a link to the cloudwatch log steam for an ECS app or Lambda function.",
+  "permissions": [
+    "activeTab",
+    "https://console.aws.amazon.com*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://console.aws.amazon.com/*"],
+      "js": ["betterLogs.js"]
+    }
+  ],
+  "manifest_version": 2
+}
