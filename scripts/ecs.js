@@ -1,4 +1,4 @@
-window.onhashchange = function () {
+const betterLogs = () => {
   let ul        = document.getElementsByClassName('aws-tab-bar');
   let li        = document.createElement('li');
   let a         = document.createElement('a');
@@ -14,3 +14,6 @@ window.onhashchange = function () {
     ul[0].appendChild(li);
   }
 };
+
+window.onhashchange = betterLogs;
+window.onload       = betterLogs;
