@@ -1,7 +1,7 @@
 {
   "name": "AWS Logs",
   "version": "1.0.0",
-  "description": "Adds a link to the corresponding cloudwatch log group for an ECS app or Lambda function.",
+  "description": "Makes the AWS console better.",
   "content_scripts": [
     {
       "matches": ["*://console.aws.amazon.com/ecs*"],
