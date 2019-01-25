@@ -6,7 +6,7 @@
     {
       "matches": ["*://console.aws.amazon.com/ecs*"],
       "run_at": "document_end",
-      "js": ["./scripts/betterLogs.js"]
+      "js": ["./scripts/ecs.js"]
     }
   ],
   "permissions": [
