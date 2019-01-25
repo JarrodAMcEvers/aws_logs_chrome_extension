@@ -4,13 +4,13 @@
   "description": "Adds a link to the corresponding cloudwatch log group for an ECS app or Lambda function.",
   "content_scripts": [
     {
-      "matches": ["https://console.aws.amazon.com/ecs/*"],
+      "matches": ["*://console.aws.amazon.com/ecs*"],
       "run_at": "document_end",
       "js": ["./scripts/betterLogs.js"]
     }
   ],
   "permissions": [
-    "activeTab"
+    "*console.aws.amazon.com*"
   ],
   "icons": {
     "16": "images/cloudwatch_icon.png",
