@@ -1,5 +1,5 @@
 {
-  "name": "AWS Logs",
+  "name": "Better AWS",
   "version": "1.0.0",
   "description": "Makes the AWS console better.",
   "content_scripts": [
@@ -7,6 +7,11 @@
       "matches": ["*://console.aws.amazon.com/ecs*"],
       "run_at": "document_end",
       "js": ["./scripts/ecs.js"]
+    },
+    {
+      "matches": ["*://console.aws.amazon.com/lambda*"],
+      "run_at": "document_end",
+      "js": ["./scripts/lambda.js"]
     }
   ],
   "permissions": [
