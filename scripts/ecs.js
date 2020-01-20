@@ -7,8 +7,9 @@ const betterLogs = () => {
   let link  = window.location.href;
   let match = link.match(new RegExp('clusters/.*/services/(.*)/'));
   if (match) {
+    let region = link.match(new RegExp('region=([a-z]+-[a-z]+-([0-9]|[a-z]+-[0-1]))'))[0];
     let appName = match[1];
-    a.setAttribute('href', `https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#logs:prefix=${appName}`);
+    a.setAttribute('href', `https://console.aws.amazon.com/cloudwatch/home?${region}#logsV2:log-groups$3FlogGroupNamePrefix$3D${appName}`);
     a.setAttribute('target', '_blank');
     li.appendChild(a);
     ul[0].appendChild(li);
