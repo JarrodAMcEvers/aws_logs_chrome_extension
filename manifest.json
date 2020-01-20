@@ -15,7 +15,7 @@
     }
   ],
   "permissions": [
-    "*console.aws.amazon.com*"
+    "https://console.aws.amazon.com/*"
   ],
   "icons": {
     "16": "images/cloudwatch_icon.png",
