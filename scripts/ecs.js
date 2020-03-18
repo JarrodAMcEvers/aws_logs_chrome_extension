@@ -9,7 +9,7 @@ const betterLogs = () => {
   if (match) {
     let region = link.match(new RegExp('region=([a-z]+-[a-z]+-([0-9]|[a-z]+-[0-1]))'))[0];
     let appName = match[1];
-    a.setAttribute('href', `https://console.aws.amazon.com/cloudwatch/home?${region}#logsV2:log-groups$3FlogGroupNamePrefix$3D${appName}`);
+    a.setAttribute('href', `https://console.aws.amazon.com/cloudwatch/home?${region}#logsV2:log-groups$3FlogGroupNameFilter$3D${appName}`);
     a.setAttribute('target', '_blank');
     li.appendChild(a);
     ul[0].appendChild(li);
